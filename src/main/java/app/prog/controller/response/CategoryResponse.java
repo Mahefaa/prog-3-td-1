@@ -1,7 +1,5 @@
 package app.prog.controller.response;
 
-import app.prog.model.CategoryEntity;
-import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,10 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 @Builder
-public class BookResponse {
+public class CategoryResponse {
   private int id;
-  private String author;
-  private String title;
-  private boolean hasAuthor;
-  private List<CategoryResponse> categories;
+  private String name;
 }
